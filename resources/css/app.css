@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mb-2 {
+    margin-bottom: 2rem; /* Ajustez cette valeur selon vos besoins */
+}
+
+h1 {
+    font-size: 2rem; /* Ajustez la taille selon vos besoins */
+    font-weight: bold; /* Rendre le texte en gras, si nécessaire */
+    margin-bottom: 1rem; /* Espacement en bas pour séparer du contenu suivant */
+    color: #333; /* Couleur du texte, personnalisez comme vous le souhaitez */
+}
+
+.d-inline-flex {
+    display: inline-flex;
+    gap: 10px; /* Ajustez l'espacement entre les boutons selon vos besoins */
+    align-items: center; /* Centrer les éléments verticalement si nécessaire */
+}
+
+.table {
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #e9e9e9;
+}
+
+.text-soft-red {
+    color: #FF6F61; /* Couleur de texte rouge pastel */
+    transition: color 0.3s; /* Transition pour l'effet au survol */
+}
+
+.text-soft-red:hover {
+    color: #E65E50; /* Couleur de texte au survol (rouge un peu plus foncé) */
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+.btn-soft-green {
+    background-color: #4CAF50; /* Couleur de fond vert doux */
+    color: white; /* Couleur du texte */
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-soft-green:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+    color: white; /* Assure que le texte reste blanc */
+}
+
+.btn-highlight-yellow {
+    background-color: #ff9307; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    /*padding: 10px 15px;  Espacement interne */
+    padding: 5px 20px;
+    font-size: 16px; /* Taille de police */
+    transition: background-color 0.3s, transform 0.2s; /* Transition pour l'effet au survol */
+}
+
+.btn-highlight-yellow:hover {
+    background-color: #ff6600; /* Couleur de fond au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+.btn-highlight-yellow:active {
+    transform: translateY(1px); /* Légère descente lors du clic */
+    background-color: #FF8F00; /* Couleur de fond lors du clic */
+}
+
+.btn-highlight-soft-red {
+    background-color: #FF6F61; /* Couleur de fond rouge pastel */
+    color: white; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille de police */
+    transition: background-color 0.3s, transform 0.2s; /* Transition pour l'effet au survol */
+}
+
+.btn-highlight-soft-red:hover {
+    background-color: #E65E50; /* Couleur de fond au survol (rouge un peu plus foncé) */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+.btn-highlight-soft-red:active {
+    transform: translateY(1px); /* Légère descente lors du clic */
+    background-color: #D14D40; /* Couleur de fond lors du clic */
+}
+
+.btn-transparent-red {
+    background-color: transparent; /* Pas de couleur de fond */
+    color: #FF6F61; /* Couleur du texte rouge pastel */
+    border: 2px solid #FF6F61; /* Bordure rouge pastel */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 1px 10px; /* Espacement interne */
+    text-align: center; /* Alignement du texte au centre */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Permet au bouton d'avoir un espacement */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet au survol */
+}
+
+.btn-transparent-red:hover {
+    background-color: #FF6F61; /* Couleur de fond au survol */
+    color: white; /* Texte en blanc au survol pour le contraste */
+}
+
+.badge {
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+.bg-user-confirmed {
+    background-color: #28a745;
+}
+.bg-other-confirmed {
+    background-color: #0646f8;
+}
+
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+}
+
+.alert-success {
+    background-color: #e6f9e6; /* Vert doux en arrière-plan */
+    color: #2d7a2d;            /* Vert foncé pour le texte */
+    border: 1px solid #b5e3b5; /* Bordure d'un vert légèrement plus foncé */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.alert-success .close {
+    color: #2d7a2d;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.alert-success .close:hover {
+    color: #225d22;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Conteneur du formulaire */
+.page-title {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #2c3e50; /* Couleur d'un bleu foncé */
+    margin-bottom: 20px; /* Marge en bas pour l'espacement */
+    text-align: center; /* Centrer le texte */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Label */
+.form-container label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Focus sur les champs */
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    outline: none;
+    border-color: #4caf50; /* Vert doux pour le focus */
+}
+
+/* Bouton d'envoi */
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50; /* Vert doux */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049; /* Vert légèrement plus foncé */
+}
