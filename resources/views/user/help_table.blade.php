@@ -40,7 +40,7 @@
                                     <button type="submit" class="btn-transparent-red">Me désinscrire</button>
                                 </form>
                             @elseif ($signup)
-                                <span class="badge bg-other-confirmed">Aide Confirmée</span>
+                                <span class="badge bg-other-confirmed">{{$signup->user->name}}</span>
                             @else
                                 <form action="{{ route('user.signupHelp', ['person' => $person->id, 'week' => $week->id]) }}" method="POST">
                                     @csrf

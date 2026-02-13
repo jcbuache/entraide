@@ -1,0 +1,32 @@
+# Ensure .env is ok
+
+# Install composer et nodejs
+https://getcomposer.org/Composer-Setup.exe
+https://nodejs.org/dist/v24.13.1/node-v24.13.1-x64.msi
+
+# Install dependencies
+composer install
+
+# Install Javascript/CSS dependencies 'or'
+npm install
+yarn install
+
+# Generate app key - only if .env does not contain APP_KEY value.
+php artisan key:Generate
+
+# DB migration
+php artisan migrate
+
+# Build assets
+npm run build - quick build
+--> provides the css/js files in public/build/assets
+--> files to be updated in
+   - resources/views/layouts/app.blade.php
+   - resources/views/layouts/guest.blade.php
+   
+npm run dev - start Vite's dev server
+
+# Start Laravel dev server
+php artisan server
+
+# Go to http://127.0.0.1:8000/
